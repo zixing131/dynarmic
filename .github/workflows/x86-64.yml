@@ -1,6 +1,11 @@
 name: x86-64
 
-on: [ push, pull_request ]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
 
 env:
   BUILD_TYPE: Release
